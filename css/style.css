@@ -889,33 +889,33 @@ textarea:focus {
 
 /*contact-us*/
 #contact-us {
-	margin-top: 100px;
 	background-attachment: scroll;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #30333A;
+    color: white;
+	font-family: 'Raleway', sans-serif;
 }
 
-#contact-us .col-md-6 {
-	padding: 0;
+#contact-us #mail {
+	padding-left:40px;
 	
 }
 
-#contact-us .contact-us-heading {
-	text-align: center;
-}
-
 #contact-us .contact-us-heading h2 {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 700;
+	font-family: 'EngraversGothic BT';
+/*	font-weight: 700;*/
 	font-size: 45px;
-	text-transform: uppercase;
+	color:#C0C59F;
 }
 
 #contact-us .contact-us-heading p {
 	margin-top: 20px;
 	line-height: 25px;
-	color: #8e8e8e;
+	color: white;
 	margin-bottom: 50px;
+	font-family: 'Raleway', sans-serif;
+	padding-left: 50px;
 }
 
 .contact-us-style-one {

@@ -70,6 +70,7 @@ $(document).ready(function() {
 	//Google Map
     var get_latitude = $('#google-map').data('latitude');
     var get_longitude = $('#google-map').data('longitude');
+    var theContent = $('#google-map').data('content');
 
     function initialize_google_map() {
         var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
@@ -83,6 +84,9 @@ $(document).ready(function() {
             position: myLatlng,
             map: map
         });
+         var infowindow = new google.maps.InfoWindow({
+		    content: theContent
+		 });
     }
     google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
