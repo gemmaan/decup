@@ -23,9 +23,11 @@ body {
 	font-smooth: always;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
+	overflow-x: hidden;
 }
 
 a {
+	color:black;
 	text-decoration: none;
 	-moz-transition: all linear .3s;
 	-webkit-transition: all linear .3s;
@@ -35,6 +37,7 @@ a {
 
 a:hover {
 	text-decoration: none;
+	color:black;
 }
 
 img {
@@ -82,10 +85,9 @@ textarea:focus {
 }
 
 .btn {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'EngraversGothic BT';
 	font-size: 14px;
 	font-weight: 600;
-	width: 120px;
 	height: 40px;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
@@ -201,7 +203,7 @@ textarea:focus {
 }
 /*Toggle Menu*/
 #main-nav .navbar-toggle {
-	background-color: #01b1d7;
+	background-color: #546634;
 }
 
 #main-nav .navbar-toggle span {
@@ -303,6 +305,7 @@ textarea:focus {
 }
 #slider .caption .slider1-right p{
 	margin-top: 20%;
+	font-size: 56px;
 }
 
 #slider .caption h2 {
@@ -331,20 +334,22 @@ textarea:focus {
 
 
 #slider .caption button {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 700;
-	font-size: 17px;
-	margin-top: 20px;
-	background-color: #01b1d7;
+	margin-left: 7%;
+/*	font-family: 'EngraversGothic BT';*/
+	font-family: 'Open Sans';
+	/*font-weight: 700;*/
+	font-size: 30px;
+	height: 70px;
+	background-color: transparent;
 	color: #fff;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 }
 
 #slider .caption button:hover {
-	background-color: #fff;
-    border: 1px solid #01b1d7;
+	background-color: rgba(48,51,58,0.8);
+    border: 2px solid #C0C59F;
     transition: 0.3s;
-    color: #01b1d7;
+    color: #C0C59F;
 }
 
 #slider .caption img{
@@ -354,6 +359,14 @@ textarea:focus {
 
 /*Media*/
 @media screen and (min-width: 320px) and (max-width: 520px) {
+	#slider .caption .slider1-left img{
+		margin-left: 45%;
+		width: 20%;
+	}
+	#slider .caption .slider1-right {
+		display: none;
+		/*opacity: 0;*/
+	}
 	#slider .caption {
 		position: absolute;
 		width: 400px;
@@ -371,17 +384,35 @@ textarea:focus {
 		color: #01b1d7;
 	}
 
-	#slider .caption .btn {
-		width: 80px;
-	    height: 20px;
-		font-size: 10px;
-		margin-top: 5px;
-		padding: 0;
+	#slider .caption .slider1-btn {
+	    height: 40px;
+		font-size: 16px;
+		margin-left: 40%;
+
 	}
+	#slider .caption .slider1-left {
+		display: none;
+		margin-top: 30%;
+	}
+	#slider .caption .slider1-left img{
+		margin-left: 47%;
+		width: 25%;
+	}
+	#slider .caption .slider1-right p{
+		opacity: 0;
+	}	
 }
 
 /*Media*/
 @media screen and (min-width: 521px) and (max-width: 980px) {
+	#slider .caption .slider1-left img{
+		margin-left: 45%;
+		width: 20%;
+	}
+	#slider .caption .slider1-right {
+		display: none;
+		/*opacity: 0;*/
+	}
 	#slider .caption {
 		position: absolute;
 		width: 450px;
@@ -398,13 +429,14 @@ textarea:focus {
 		color: #01b1d7;
 	}
 
-	#slider .caption .btn {
-		width: 110px;
-	    height: 30px;
-		font-size: 12px;
-		margin-top: 15px;
+	#slider .caption .slider1-btn {
+	    height: 40px;
+		font-size: 16px;
+		margin-left: 40%;
 
 	}
+
+
 }
 
 /*Control Nav*/
@@ -442,6 +474,7 @@ textarea:focus {
 	padding: 80px;
 	background-color: #30333A;
 }
+
 
 #about .about-heading {
 	text-align: left;
@@ -561,7 +594,10 @@ textarea:focus {
 	#about {
 		padding: 0;
 	}
-
+#about img {
+	width: 40%;
+	margin-left: 25%;
+}
 	#about .about-heading h2 {
 		margin-top: 30px;
 		font-size: 27px;
@@ -638,6 +674,10 @@ textarea:focus {
 		padding: 0;
 	}
 
+#about img {
+	width: 40%;
+	margin-left: 25%;
+}
 	#about .about-heading h2 {
 		margin-top: 30px;
 		font-size: 30px;
@@ -833,7 +873,6 @@ textarea:focus {
 /*Media*/
 @media screen and (min-width: 521px) and (max-width: 980px) {
 	#competition {
-		margin-top: 50px;
 		padding: 0;
 	}
 
@@ -1075,9 +1114,6 @@ textarea:focus {
 
 /*Media*/
 @media screen and (min-width: 320px) and (max-width: 520px) {
-	#contact-us {
-		margin-top: 50px;
-	}
 
 	#contact-us .contact-us-heading h2 {
 		font-size: 27px;
@@ -1094,9 +1130,6 @@ textarea:focus {
 
 /*Media*/
 @media screen and (min-width: 521px) and (max-width: 980px) {
-	#contact-us {
-		margin-top: 50px;
-	}
 
 	#contact-us .contact-us-heading h2 {
 		font-size: 30px;
@@ -1110,7 +1143,7 @@ textarea:focus {
 /*Portfolio*/
 #portfolio {
 	padding-top: 100px;
-	padding-bottom: 100px;
+	/*padding-bottom: 100px;*/
 	background-color: #40444F;
 }
 
@@ -1149,79 +1182,6 @@ textarea:focus {
 		line-height: 20px;
 	}
 }
-/*#portfolio {
-	margin-top: 100px;
-	background-color: #40444F;
-}
-
-#portfolio .portfolio-heading {
-	text-align: center;
-}
-
-#portfolio .portfolio-heading h2 {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 700;
-	font-size: 45px;
-	text-transform: uppercase;
-}
-
-#portfolio .portfolio-heading p {
-	margin-top: 20px;
-	line-height: 25px;
-	color: #8e8e8e;
-	margin-bottom: 50px;
-}*/
-
-#portfolio .portfolio-thumbnail {
-	position: relative;
-}
-
-#portfolio .portfolio-thumbnail img {
-	width: 100%;
-	height:auto;
-}
-
-#portfolio .portfolio-thumbnail .col-md-3 {
-	padding: 0;
-}
-
-#portfolio .portfolio-thumbnail .caption {
-	width: 94%;
-	margin-left: 15px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background-color: rgba(192,197,159, 0.6);
-/*	opacity: 0;
-	-moz-transition: opacity linear .3s;
-	-webkit-transition: opacity linear .3s;
-	-o-transition: opacity linear .3s;
-	transition: opacity linear .3s;*/
-}
-
-#portfolio .portfolio-thumbnail .caption p {
-		font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-	text-align: center;
-	color: #2F2E2E;
-	position: absolute;
-	font-size: 17px;
-	text-transform: capitalize;
-	top: 55%;
-	left: 30%;
-	right: 30%;
-	opacity: 0;
-	-moz-transition: opacity linear .3s;
-	-webkit-transition: opacity linear .3s;
-	-o-transition: opacity linear .3s;
-	transition: opacity linear .3s;
-}
-
-#portfolio .portfolio-thumbnail .item:hover > .caption p {
-	opacity: 1;
-}
 
 #portfolio .caption h4 {
 	font-family: 'Raleway', sans-serif;
@@ -1234,49 +1194,8 @@ textarea:focus {
 	top: 40%;
 	left: 30%;
 	right: 30%;
-	/*font-family: 'Raleway', sans-serif;
-	text-align: center;
-	color: #2F2E2E;
-	font-size: 24px;*/
-/*	background-color: #fff;*/
-	/*position: absolute;
-	top: 45%;
-	left: 40%;
-	margin-top: -22px;
-	margin-left: -22px;
-	font-weight: 700;*/
-/*	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;*/
 
 }
-
-/*Media*/
-/*@media screen and (min-width: 320px) and (max-width: 520px) {
-	#portfolio {
-		margin-top: 50px;
-	}
-
-	#portfolio .portfolio-heading h2 {
-		font-size: 27px;
-	}
-
-	#portfolio .portfolio-heading p {
-		font-size: 13px;
-	}
-}
-
-/*Media*/
-/*@media screen and (min-width: 521px) and (max-width: 980px) {
-	#portfolio {
-		margin-top: 50px;
-	}
-
-	#portfolio .portfolio-heading h2 {
-		font-size: 30px;
-	}
-
-}*/
 
 /*Contact*/
 #contact {
@@ -1546,4 +1465,112 @@ textarea:focus {
 	font-size: 32pt;
 	font-weight: 700;
 
+}
+#modalOpening {
+	top: 75px;
+}
+#modalOpening .modal-body{
+	/*height: 600px;*/
+	overflow: auto;
+}
+#modalOpening .modal-title {
+	font-family: 'EngraversGothic BT';
+	text-transform: uppercase;
+	font-size: 32pt;
+	font-weight: 700;
+
+}
+
+/*************************
+********Twitter CSS*******
+**************************/
+
+.parallax {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#twitter {
+  background-image: url(../images/portfolio/medspin3.jpg);
+}
+
+#twitter > div {
+  text-align: center;
+  position: relative;
+}
+
+#twitter-carousel {
+  position: relative;
+  z-index: 15
+}
+
+.twitter-icon {
+  position: relative;
+  z-index: 15;
+  color: #30333A;
+  margin-top: 13%;
+  font-weight: 700;
+}
+
+.twitter-icon .fa-twitter {
+  font-size: 24px;
+  height: 64px;
+  width: 64px;
+  line-height: 65px;
+  border-radius: 50%; 
+  position: relative;
+}
+
+.twitter-icon .fa-twitter:after {
+  position: absolute;
+  content: "";
+  border-width: 8px;
+  border-style: solid;
+  left: 24px;
+  bottom: -14px;
+}
+
+#twitter-carousel .item {
+  padding: 0 55px;
+  color: #2F2E2E;
+}
+
+#twitter-carousel .item a {
+  color: #fff;
+}
+
+.twitter-icon h4 {
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.twitter-left-control, 
+.twitter-right-control {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  border: 1px solid #fafafa;
+  height:34px;
+  width: 34px;
+  line-height: 31px;
+  margin-top: -17px;
+  font-size: 18px;
+  border-radius: 50%;
+  z-index: 15
+}
+
+.twitter-left-control {
+  left: 80px;
+} 
+
+.twitter-right-control {
+  right: 80px
+}
+
+.twitter-left-control:hover, .twitter-right-control:hover {
+  color: #fff;
 }
