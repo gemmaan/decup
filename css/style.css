@@ -285,14 +285,42 @@ textarea:focus {
 /*Slider Caption*/
 #slider .caption {
 	position: absolute;
-	top: 50%;
+	top:50%;
+}
+
+#slider .caption p {
+	font-family: 'EngraversGothic BT';
+	font-weight: 900;
+	font-size: 96px;
+	margin-top: 50%;
+}
+
+#slider .caption .slider1-left {
+}
+
+#slider .caption .slider1-left img{
+	margin-left: 45%;
+}
+#slider .caption .slider1-right p{
+	margin-top: 20%;
 }
 
 #slider .caption h2 {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'EngraversGothic BT';
 	font-weight: 700;
 	font-size: 48px;
-	text-transform: uppercase;
+}
+
+#slider .caption .slider2 {
+	margin-left: 25%;
+}
+
+#slider .caption .slider3 {
+	margin-left: 10%;
+}
+
+#slider .caption .slider4 {
+	margin-left: 35%;
 }
 
 #slider .caption span {
@@ -300,12 +328,7 @@ textarea:focus {
 	color: #fff;
 }
 
-#slider .caption p {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 900;
-	font-size: 96px;
-	margin-top: 50%;
-}
+
 
 #slider .caption button {
 	font-family: 'Josefin Sans', sans-serif;
@@ -325,8 +348,8 @@ textarea:focus {
 }
 
 #slider .caption img{
-	width: 40%;
-	height: 40%;
+	width: 60%;
+	height: 60%;
 }
 
 /*Media*/
@@ -343,7 +366,6 @@ textarea:focus {
 
 	#slider .caption p {
 		font-size: 10px;
-		font-style: italic;
 		margin: 0;
 		padding: 0;
 		color: #01b1d7;
@@ -372,7 +394,6 @@ textarea:focus {
 
 	#slider .caption p {
 		font-size: 16px;
-		font-style: italic;
 		margin-top: 15px;
 		color: #01b1d7;
 	}
