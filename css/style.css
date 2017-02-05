@@ -1533,3 +1533,17 @@ textarea:focus {
 	color: #01b1d7;
 }
 
+#modalCompet {
+	top: 75px;
+}
+#modalCompet .modal-body{
+	/*height: 600px;*/
+	overflow: auto;
+}
+#modalCompet #judul {
+	font-family: 'EngraversGothic BT';
+	text-transform: uppercase;
+	font-size: 32pt;
+	font-weight: 700;
+
+}
