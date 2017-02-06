@@ -117,7 +117,7 @@ textarea:focus {
 
 .container {
 	position: relative;
-	z-index: 3;
+	/*z-index: 3;*/
 }
 
 /*Header*/
@@ -1459,6 +1459,7 @@ textarea:focus {
 
 #modalCompet {
 	top: 75px;
+	z-index: 1.5;
 }
 #modalCompet .modal-body{
 	/*height: 600px;*/
@@ -1607,4 +1608,11 @@ iframe {
     border: 2px solid white;
     transition: 0.3s;
     color: white;
+}
+
+#line-id {
+	margin-left: 10%;
+}
+#idnya {
+	margin-left: 3px;
 }
