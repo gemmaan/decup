@@ -831,7 +831,7 @@ textarea:focus {
 /*Competition*/
 #competition {
 	padding: 50px;
-	background-color: #C0C49F;
+	background-color: #e6e6fa;
 }
 
 #competition .competition-heading {
@@ -1446,7 +1446,7 @@ textarea:focus {
 	background-color: #282828;
 	padding: 20px 0;
 	color: #8e8e8e;
-	height:100px;
+	
 }
 
 #bottom-footer .footer-right ul > li > a {
