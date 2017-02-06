@@ -471,7 +471,7 @@ textarea:focus {
 
 /*About*/
 #about {
-	padding: 80px;
+	padding: 50px;
 	background-color: #30333A;
 }
 
@@ -830,8 +830,8 @@ textarea:focus {
 
 /*Competition*/
 #competition {
-	padding: 80px;
-	background-color: #C0C59F;
+	padding: 50px;
+	background-color: #C0C49F;
 }
 
 #competition .competition-heading {
@@ -950,8 +950,8 @@ textarea:focus {
 /*contact-us*/
 #contact-us {
 	background-attachment: scroll;
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     background-color: #30333A;
     color: white;
 	font-family: 'Raleway', sans-serif;
@@ -1142,7 +1142,7 @@ textarea:focus {
 
 /*Portfolio*/
 #portfolio {
-	padding-top: 100px;
+	padding-top: 50px;
 	/*padding-bottom: 100px;*/
 	background-color: #40444F;
 }
@@ -1314,6 +1314,10 @@ textarea:focus {
     position:relative;
     margin-top:10px;
     height: 400px;
+    z-index: 10;
+    -moz-box-shadow: 0 1px 2px #ebebeb;
+	-webkit-box-shadow: 0 1px 2px #ebebeb;
+	box-shadow: 0 5px 5px rgba(0,0,0,.15);
 }
 
 /*Client*/
@@ -1574,4 +1578,33 @@ textarea:focus {
 
 .twitter-left-control:hover, .twitter-right-control:hover {
   color: #fff;
+}
+
+iframe {
+	z-index: 10;
+	-moz-box-shadow: 0 1px 2px #ebebeb;
+	-webkit-box-shadow: 0 1px 2px #ebebeb;
+	box-shadow: 0 5px 5px rgba(0,0,0,.15);
+}
+
+#register  {
+	margin-left: 43%;
+/*	font-family: 'EngraversGothic BT';*/
+	font-family: 'Open Sans';
+	/*font-weight: 700;*/
+	font-size: 20px;
+	height: 70px;
+	background-color: transparent;
+	color: #fff;
+	border: 2px;
+
+
+
+}
+
+#register:hover {
+	background-color: rgba(48,51,58,0.8);
+    border: 2px solid white;
+    transition: 0.3s;
+    color: white;
 }
