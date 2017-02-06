@@ -1634,3 +1634,7 @@ iframe {
 		font-size: 10pt;
 	}
 	}
+
+	#register-modal {
+			margin-top: 20px;
+	}
